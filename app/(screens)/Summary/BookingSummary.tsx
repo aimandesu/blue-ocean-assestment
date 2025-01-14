@@ -87,6 +87,43 @@ const Summary = () => {
               {new Date().toLocaleDateString()}
             </Text>
           </View>
+          <View
+            style={{
+              borderBottomColor: "black",
+              borderBottomWidth: StyleSheet.hairlineWidth,
+            }}
+          />
+          <View
+            style={{
+              flexDirection: "row",
+              justifyContent: "space-between",
+              marginVertical: 16,
+            }}
+          >
+            <View
+              style={{
+                alignItems: "center",
+              }}
+            >
+              <Text style={{ fontSize: 18, fontWeight: "600" }}>
+                {passenger.origin}
+              </Text>
+            </View>
+            <View
+              style={{
+                alignItems: "center",
+              }}
+            >
+              <Text
+                style={{
+                  fontSize: 18,
+                  fontWeight: "600",
+                }}
+              >
+                {passenger.destination}
+              </Text>
+            </View>
+          </View>
 
           <View
             style={{
@@ -137,7 +174,6 @@ const Summary = () => {
               </Text>
             </View>
           </View>
-
           <View
             style={{
               height: 1,
@@ -211,6 +247,31 @@ const Summary = () => {
                 }}
               >
                 {passenger.noPax}
+              </Text>
+            </View>
+
+            <View
+              style={{
+                flexDirection: "row",
+                justifyContent: "space-between",
+                alignItems: "center",
+              }}
+            >
+              <Text
+                style={{
+                  fontSize: 16,
+                  color: "#666",
+                }}
+              >
+                Departure Date:
+              </Text>
+              <Text
+                style={{
+                  fontSize: 16,
+                  fontWeight: "600",
+                }}
+              >
+                {passenger.departureDate}
               </Text>
             </View>
 
