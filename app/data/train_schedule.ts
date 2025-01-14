@@ -4,7 +4,7 @@ const trainDataSchedule: TrainSchedule = {
   trainNo: 1,
   departureTime: "08:00 AM",
   arrivalTime: "02:00 PM",
-  totalAmount: 200,
+  totalAmount: 80,
   trainDetails: [
     {
       coach: "coach A",
